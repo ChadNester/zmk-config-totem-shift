@@ -260,10 +260,10 @@
             //                                           └─────────┴─────────┴──────────┘└─────────┴─────────┴─────────┘
 
             bindings = <
-           &kp Q  &kp W  &kp E      &kp R        &kp T          &kp Y      &kp U     &kp I          &kp O    &kp P
-           &kp A  &kp S  &kp D      &kp F        &kp G          &kp H      &kp J     &kp K          &kp L    &kp SEMICOLON
-&lt 3 TAB  &kp Z  &kp X  &kp C      &kp V        &kp B          &kp N      &kp M     &kp COMMA      &kp DOT  &kp FSLH       &lc 2 SQT
-                         &kp LC(C)  &lt 2 LC(V)  &lt 1 SPACE    &lt 2 RET  &kp BSPC  &kp LC(GRAVE)
+           &kp Q           &kp W           &kp E        &kp R             &kp T          &kp Y      &kp U              &kp I          &kp O            &kp P
+           &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G          &kp H      &hm RIGHT_SHIFT J  &hm RCTRL K    &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI
+&lt 3 TAB  &kp Z           &kp X           &kp C        &kp V             &kp B          &kp N      &kp M              &kp COMMA      &kp DOT          &kp FSLH            &lc 2 SQT
+                                           &kp LC(C)    &lt 2 LC(V)       &lt 1 SPACE    &lt 2 RET  &lt 1 LC(KP_N9)    &kp LC(GRAVE)
             >;
         };
 
