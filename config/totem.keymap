@@ -87,91 +87,42 @@
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
-            layers = <0 1 2 3>;
+            layers = <0 1 3 4>;
             bindings = <&kp ESC>;
         };
 
         combo_boot {
             timeout-ms = <50>;
             key-positions = <20 31>;
-            layers = <1 2 3>;
+            layers = <1 3 4>;
             bindings = <&bootloader>;
         };
 
         combo_undo {
             timeout-ms = <50>;
             key-positions = <34 35>;
-            layers = <0 1 2 3>;
+            layers = <0 1 3 4>;
             bindings = <&kp LC(Z)>;
-        };
-
-        combo_shift1 {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            layers = <0>;
-            bindings = <&kp LSHFT>;
-        };
-
-        combo_shift2 {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            layers = <0>;
-            bindings = <&kp RSHFT>;
-        };
-
-        combo_ctrl1 {
-            timeout-ms = <50>;
-            key-positions = <11 13>;
-            layers = <0>;
-            bindings = <&kp LCTRL>;
-        };
-
-        combo_ctrl2 {
-            timeout-ms = <50>;
-            key-positions = <16 18>;
-            layers = <0>;
-            bindings = <&kp RCTRL>;
-        };
-
-        combo_alt1 {
-            timeout-ms = <50>;
-            key-positions = <13 10>;
-            layers = <0>;
-            bindings = <&kp LALT>;
-        };
-
-        combo_alt2 {
-            timeout-ms = <50>;
-            key-positions = <16 19>;
-            layers = <0>;
-            bindings = <&kp RALT>;
-        };
-
-        combo_super {
-            timeout-ms = <50>;
-            key-positions = <32 37>;
-            layers = <0 2 3 1>;
-            bindings = <&kp LGUI>;
         };
 
         combo_backspace1 {
             key-positions = <5 6>;
             timeout-ms = <50>;
-            layers = <0 1 2 3>;
+            layers = <0 1 3 4>;
             bindings = <&kp BACKSPACE>;
         };
 
         to_game_layer {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <4 5>;
-            layers = <0 1 2 3>;
+            layers = <0 1 3 4>;
             timeout-ms = <50>;
         };
 
         region_screen {
             bindings = <&capture_region>;
             key-positions = <20 25>;
-            layers = <0 1 2 3>;
+            layers = <0 1 3 4>;
             timeout-ms = <50>;
         };
 
@@ -179,21 +130,21 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <3 4>;
             timeout-ms = <50>;
-            layers = <0 1 2 3>;
+            layers = <0 1 3 4>;
         };
 
         combo_del1 {
             bindings = <&kp DEL>;
             key-positions = <24 25>;
             timeout-ms = <50>;
-            layers = <0 1 2 3>;
+            layers = <0 1 3 4>;
         };
 
         combo_del2 {
             bindings = <&kp DEL>;
             key-positions = <26 27>;
             timeout-ms = <50>;
-            layers = <0 1 2 3>;
+            layers = <0 1 3 4>;
         };
 
         /* 			combo_copy {
@@ -260,14 +211,12 @@
             //                                           └─────────┴─────────┴──────────┘└─────────┴─────────┴─────────┘
 
             bindings = <
-           &kp Q           &kp W           &kp E        &kp R             &kp T          &kp Y      &kp U              &kp I          &kp O            &kp P
-           &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G          &kp H      &hm RIGHT_SHIFT J  &hm RCTRL K    &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI
-&lt 3 TAB  &kp Z           &kp X           &kp C        &kp V             &kp B          &kp N      &kp M              &kp COMMA      &kp DOT          &kp FSLH            &lc 2 SQT
-                                           &kp LC(C)    &lt 2 LC(V)       &lt 1 SPACE    &lt 2 RET  &lt 1 LC(KP_N9)    &kp LC(GRAVE)
+           &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y      &kp U              &kp I          &kp O            &kp P
+           &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G        &kp H      &hm RIGHT_SHIFT J  &hm RCTRL K    &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI
+&lt 4 TAB  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N      &kp M              &kp COMMA      &kp DOT          &kp FSLH            &lc 3 SQT
+                                           &kp ESCAPE   &lt 3 SPACE       &lt 1 TAB    &lt 2 RET  &lt 1 BACKSPACE    &kp LC(GRAVE)
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         num_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -286,14 +235,21 @@
             //                                           └─────────┴─────────┴──────────┘└─────────┴─────────┴─────────┘
 
             bindings = <
-           &kp KP_MINUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE      &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS
-           &kp KP_PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY    &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS
-&kp PSCRN  &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp RET            &kp RET          &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &trans
-                                    &kp KP_N0  &trans     &kp SPACE          &kp SPACE        &trans     &kp KP_N0
+           &kp LEFT_BRACKET  &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp RIGHT_BRACKET    &trans     &trans  &trans     &trans  &trans
+           &kp SEMICOLON     &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp EQUAL            &trans     &trans  &trans     &trans  &trans
+&kp PSCRN  &kp APOS          &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp BACKSLASH        &trans     &trans  &trans     &trans  &trans  &trans
+                                        &kp PERIOD  &kp N0     &kp MINUS            &kp SPACE  &trans  &kp KP_N0
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        symbol_layer {
+            bindings = <
+        &kp LEFT_BRACE  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &kp COLON       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
 
         media_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -319,8 +275,6 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
         function_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -344,8 +298,6 @@
                                       &trans                  &trans                   &kp SPACE       &trans           &trans  &trans
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄		
 
         game_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
