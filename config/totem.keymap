@@ -111,7 +111,7 @@
         };
 
         to_game_layer {
-            bindings = <&to 5>;
+            bindings = <&to 0>;
             key-positions = <4 5>;
             layers = <0 1 4 3>;
             timeout-ms = <50>;
@@ -212,7 +212,7 @@
            &kp Q           &kp W           &kp E         &kp R             &kp T        &kp Y      &kp U              &kp I          &kp O            &kp P
            &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G        &kp H      &hm RIGHT_SHIFT J  &hm RCTRL K    &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI
 &lt 3 TAB  &kp Z           &kp X           &kp C         &kp V             &kp B        &kp N      &kp M              &kp COMMA      &kp DOT          &kp FSLH            &lc 4 SQT
-                                           &lt 4 ESCAPE  &lt 4 SPACE       &lt 1 TAB    &lt 2 RET  &lt 1 BACKSPACE    &kp LC(GRAVE)
+                                           &lt 5 ESCAPE  &lt 4 SPACE       &lt 6 TAB    &lt 2 RET  &lt 1 BACKSPACE    &kp LC(GRAVE)
             >;
         };
 
@@ -297,27 +297,21 @@
             >;
         };
 
-        game_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "GAME";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-            //             │    1    │    2    │    3    │    4    │    5    │                    │         │         │         │         │         │   
-            //             ├─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┤
-            //             │  SHIFT  │    A    │    W    │    D    │    F    │                    │         │         │         │         │         │
-            //   ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-            //   │ ------- │  CRTL   │ ------- │    S    │    C    │ ------- │                    │         │         │         │         │         │         │
-            //   └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼─────────┬┬─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
-            //                                           │   ALT   │  SPACE  │  SPACE  ││         │         │         │  
-            //                                           └─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┘
-
+        media_layer {
             bindings = <
-       &kp N1     &kp N2  &kp N3    &kp N4     &kp N5       &trans  &trans  &trans  &trans  &trans
-       &kp LSHFT  &kp A   &kp W     &kp D      &kp F        &trans  &trans  &trans  &trans  &trans
-&none  &kp LCTRL  &none   &kp S     &kp C      &none        &trans  &trans  &trans  &trans  &trans  &to 0
-                          &kp LALT  &kp SPACE  &kp SPACE    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans      &trans            &trans             &trans           &trans
+        &trans  &trans  &trans  &trans  &trans    &trans      &kp C_REWIND      &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp C_FAST_FORWARD
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans            &trans             &trans           &trans              &trans
+                        &trans  &trans  &trans    &kp K_STOP  &kp K_PLAY_PAUSE  &trans
+            >;
+        };
+
+        eesti_layer {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
